@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ARアプリ</title>
+
+    <!-- AR.jsを読み込む -->
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style="margin: 0; overflow: hidden;">
+
+    <a-scene embedded arjs>
+
+        <!-- Hiroマーカーを認識する -->
+        <a-marker preset="hiro">
+
+            <!-- 黄色い球体を表示する -->
+            <a-sphere position="0 0.5 0" radius="0.5" color="yellow">
+            </a-sphere>
+
+        </a-marker>
+
+        <!-- カメラ -->
+        <a-entity camera></a-entity>
+
+    </a-scene>
+
+</body>
+
+</html>
